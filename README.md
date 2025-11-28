@@ -1,13 +1,78 @@
-# React + Vite
+# AMRUTAM — Frontend (Vite + React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small Vite + React frontend application. This repository contains the UI for a shop/forum style app with components and pages under `src/`.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React + Vite development setup
+- Uses MUI, styled-components, Tailwind and Bootstrap utilities
+- Organized components under `src/components` and pages under `src/pages`
 
-## Expanding the ESLint configuration
+## Quick Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# AMRUTAM
+Requirements:
+- Node.js (recommended v16+ or later)
+- npm (bundled with Node.js)
+
+Install dependencies:
+
+```powershell
+npm install
+```
+
+Run development server:
+
+```powershell
+npm run dev
+```
+
+Build for production:
+
+```powershell
+npm run build
+```
+
+Preview production build locally:
+
+```powershell
+npm run preview
+```
+
+Linting:
+
+```powershell
+npm run lint
+```
+
+(The above commands match the `scripts` in `package.json`.)
+
+## Project Structure (important files)
+
+- `index.html` — Vite entry HTML
+- `src/main.jsx` — React entry
+- `src/App.jsx` — App root
+- `src/components/` — Reusable components (Navbar, Footer, QA widgets, pages)
+- `src/pages/` — Page components (`Forum.jsx`, `Shop.jsx`)
+- `src/data/` — Example data (`Ingredient.jsx`, `Product.jsx`)
+- `public/` — Static assets
+
+## Development notes
+
+- Routes are handled with `react-router-dom`.
+- UI libraries used: `@mui/material`, `styled-components`, `tailwindcss`, `bootstrap`, `react-icons`.
+- ESLint is configured; run `npm run lint` before commits.
+
+## Contributing
+
+- Create a branch named `feature/<short-description>`.
+- Open a PR with a clear description of changes and screenshots if UI changes.
+- Run linting and ensure the dev server runs locally before requesting review.
+
+## License
+
+This project is licensed under the MIT License — see the `LICENSE` file at the project root for details.
+
+## Contact
+
+If you want help or have questions, open an issue or reach out to the repository owner.
+
